@@ -44,7 +44,7 @@ Table des matières
    multiprocessing/index.rst
    secrets/index.rst
    unittest/index.rst
-
+   statistics/index.rst
    colorama/index.rst
    pillow/index.rst
    pygame/index.rst
@@ -52,3 +52,4 @@ Table des matières
    itertools/index.rst
    pytest/index.rst
    licence.rst
+   
