@@ -1,3 +1,5 @@
 =============
 Statistics
 =============
+
+Thibaut Piquerez
