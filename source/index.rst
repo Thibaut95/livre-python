@@ -25,5 +25,6 @@ Table des matières
    collections/index.rst
    json/index.rst
    io/index.rst
+   math/index.rst
 
    licence.rst
