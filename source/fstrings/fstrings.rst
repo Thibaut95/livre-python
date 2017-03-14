@@ -1,5 +1,0 @@
-===========
-f-strings
-===========
-
-Thibaut Piquerez

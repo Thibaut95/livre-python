@@ -43,6 +43,7 @@ Table des matières
 
    licence.rst
 
+
 À propos de ce livre
 ====================
 
@@ -65,3 +66,6 @@ Table des matières
 :Date:  2017-03-16
 :Licence:
         :ref:`licence`
+
+   
+
