@@ -72,16 +72,62 @@ Un string convertit automatiquement les échappements avec des backslashs comme 
 
 .. code-block:: pycon
 
-		>>> print('ma \n phrase')
+	>>> print('ma \n phrase')
 		
-		ma 
-		 phrase
+	ma 
+	 phrase
 
-		>>> print(r'ma \n phrase')
-		
-		ma \n phrase
+	>>> print(r'ma \n phrase')
+	
+	ma \n phrase
 
-		
+---------------------		
+Options de formattage
+---------------------
+
+f-strings implémente également une manière de mettre en forme les nombres. 
+
+Voici la syntaxe pour utiliser le formattage:
+
+.. code-block:: pycon
+
+	f ' <texte> { <expression/variable> : <format> } <text> ... '
+
+Le format se trouve sous cette forme:
+
+	[alignement][signe][largeur][groupage][.précision][type]
 	
+	- alignement : détermine ou le nombre est aligné dans sa zone
+		- '>'	aligne à droite
+		- '<'	aligne à gauche
+		- '^'	centré
+		- '='	aligne le signe à gauche et le nombre à droite
+	- signe	: détermine l'affichage du signe
+		- '+' 	indique que le signe + doit être afficher ainsi que le moins
+		- '-'   indique que le signe - doit être afficher (par defaut)
+		- ' '  	n'affiche pas le + mais insére un espace à la place
+	- largeur : détermine la place qui doit être réservé pour l'affichage du nombre
+	- groupage : détermine le symbole de séparation tous les 3 chiffres
+		- '_'
+		- ','
+	- précision : détermine la nom de chiffres après la virgule
+	- type : détermine le mode d'affichage
+		- 'e' ou 'E' 	notattion scientifique
+		- 'f' ou 'F'	affichage classique
+
+Exemple :
+
+.. code-block:: pycon
+
+	>>> nombre = 357568.12312
+	>>> nombre2 = 568.568768
+	>>> nombre3 = -34.3432
+	>>> nombre4 = 23
+	>>> print(f'{nombre : >+20_.4f} {nombre2 : >+20_.4f}')
+	>>> print(f'{nombre3 : >+20_.4f} {nombre4 : >+20_.4f}')
 	
+		   +357_568.1231            +568.5688
+				-34.3432             +23.0000	
+				
+On voit que c'est très pratique pour faire des tableau de nombre.
 
