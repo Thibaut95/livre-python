@@ -127,7 +127,7 @@ Exemple :
 	>>> print(f'{nombre3 : >+20_.4f} {nombre4 : >+20_.4f}')
 	
 	+357_568.1231            +568.5688
-	 -34.3432             +23.0000	
+	     -34.3432             +23.0000	
 				
 C'est très pratique pour faire des tableau de nombre.
 
