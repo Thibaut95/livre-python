@@ -1,5 +1,6 @@
 """Utilitaire pour l'index.rst."""
-from itertools import *
+
+from itertools import count, islice
 
 liste = ["I", "do", "love", "programming", "in", "Python"]
 for i in liste:
@@ -28,7 +29,7 @@ class itRevListe:
         self.position = len(liste)
 
     def __next__(self):
-        """On renvoie l'élément suivant dans notre liste après le parcours."""
+        """On renvoie l'élément suivant dans notre liste."""
         if self.position == 0:
             raise StopIteration
         self.position -= 1
@@ -60,7 +61,3 @@ def sayHello(name):
     yield "Bienvenu, "
     yield  # return none
     yield name
-
-
-for i in sayHello("Johnny"):
-    print(i)

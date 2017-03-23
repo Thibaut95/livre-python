@@ -129,5 +129,4 @@ Exemple :
 	+357_568.1231            +568.5688
 	     -34.3432             +23.0000	
 				
-C'est très pratique pour faire des tableau de nombre.
-
+C'est très pratique pour faire des tableaux de nombre.

@@ -45,7 +45,7 @@ Voici un autre exemple mais avec une chaine string.
 On voit que le **P** à déjà été consommé lors de l'appel à la fonction **next(iterateur)**
 
 Itérateurs offert par Python
-----------------------------
+-----------------------------
 Python nous offres des :py:mod:`itertools` qui sont des itérateurs qui nous permette d'itérer sur nous objets. Voici une petit liste non-exaustif de ce que nous propose se module : 
 
 - :py:func:`itertools.count` : crée un itérateur qui va nous retourner des valeurs espacé de par 1 défault. Attention boucle inifni.
@@ -76,19 +76,9 @@ Exemple inspiré de la documentation Python : `Python3Doc`_
 
 - troisième étape utiliser notre itertools perso!
 
-.. code-block:: pycon
-
-    >>> liste = revList(list(islice(count(), 0, 10)))
-    >>> for i in liste:
-        print(i)
-    9
-    8
-    7
-    ...
-
 
 Les générateurs
----------------
+-----------------
 Les générateurs et les itérateurs sont intimement liés. Pour faire simple, un générateur est une fonction construite à l'aide
 du mot clef **yield**. Mais contrairement aux fonctions habituelles, elle n'a pas de **return**, mais ou plusieurs **yield**.
 
@@ -107,7 +97,7 @@ Un petit exemple simple :
     "Johnny"
 
 Exemple de générateur **fibonacci**
------------------------------------
+-------------------------------------
 
 D'après l'exemple de `zeste de savoir`_
 
@@ -124,10 +114,8 @@ D'après l'exemple de `zeste de savoir`_
     >>> list(fibonacci(5, 6, 7))
     [6, 7, 13, 20, 33]
 
-
 Exemple d'utilisations d':py:mod:`itertools`
---------------------------------------------
-
+-----------------------------------------------
 Essayons maintenant de résoudre un problème avec les itertools que Pythons nous offre. Imaginons que nous avons une liste de point qui formerai un chemin dont on aimerai connaitre la distance.
 
 Objectif :
@@ -141,7 +129,7 @@ Objectif :
     >>> distances = [len(B - A), len(C - B), len(A - C)]
     >>> distance = sum(distances)
 
-Voici nos fonctions :
+Voici nos fonctions : 
 
 .. literalinclude:: ./exemples/main.py
    :start-after: # function_pairs_begin
@@ -162,17 +150,10 @@ Sortie :
     >>> print(distance)
     0
 
-:py:func:`itertools.cycle` va nous créer un itérateur qui va retourner les élélments en faisant à chaque fois une copie. Quand la boucle est terminé il va retourner les éléments qui la sauvé.
-Dans notre cas il va décaler notre liste et rajouter le première élément qu'il a enregistré à la fin. Ensuite il nous suffit de lui appliquer la fonction :py:func:`zip` qui va nous "zipper" tous ça en pair.
-
-
-
 Conclusion
-----------
+-------------
 
 Itertools est un module permettant de faire des choses simpas avec cet objet qu'est l'itérateur. Ces itérateurs sont vraiment utile et important que Python a dédié un module pour les opérations d'itération qui sont les itertools.
-
-
 
 .. [#jd] <johnny.dacosta@he-arc.ch>
 
