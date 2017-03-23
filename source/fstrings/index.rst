@@ -95,7 +95,7 @@ Voici la syntaxe pour utiliser le formattage:
 
 Le format se trouve sous cette forme:
 
-	[alignement][signe][largeur][groupage][.précision][type]
+[alignement][signe][largeur][groupage][.précision][type]
 	
 	- alignement : détermine ou le nombre est aligné dans sa zone
 		- '>'	aligne à droite
