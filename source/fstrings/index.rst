@@ -97,23 +97,23 @@ Le format se trouve sous cette forme:
 
 [alignement][signe][largeur][groupage][.précision][type]
 	
-	- alignement : détermine ou le nombre est aligné dans sa zone
-		- '>'	aligne à droite
-		- '<'	aligne à gauche
-		- '^'	centré
-		- '='	aligne le signe à gauche et le nombre à droite
-	- signe	: détermine l'affichage du signe
-		- '+' 	indique que le signe + doit être affiché ainsi que le -
-		- '-'   indique que le signe - doit être affiché (par defaut)
-		- ' '  	n'affiche pas le + mais insére un espace à la place
-	- largeur : détermine la place qui doit être réservée pour l'affichage du nombre
-	- groupage : détermine le symbole de séparation tous les 3 chiffres
-		- '_'
-		- ','
-	- précision : détermine le nombre de chiffres après la virgule
-	- type : détermine le mode d'affichage
-		- 'e' ou 'E' 	notation scientifique
-		- 'f' ou 'F'	affichage classique
+- alignement : détermine ou le nombre est aligné dans sa zone
+	- '>'	aligne à droite
+	- '<'	aligne à gauche
+	- '^'	centré
+	- '='	aligne le signe à gauche et le nombre à droite
+- signe	: détermine l'affichage du signe
+	- '+' 	indique que le signe + doit être affiché ainsi que le -
+	- '-'   indique que le signe - doit être affiché (par defaut)
+	- ' '  	n'affiche pas le + mais insére un espace à la place
+- largeur : détermine la place qui doit être réservée pour l'affichage du nombre
+- groupage : détermine le symbole de séparation tous les 3 chiffres
+	- '_'
+	- ','
+- précision : détermine le nombre de chiffres après la virgule
+- type : détermine le mode d'affichage
+	- 'e' ou 'E' 	notation scientifique
+	- 'f' ou 'F'	affichage classique
 
 Exemple :
 
@@ -126,8 +126,8 @@ Exemple :
 	>>> print(f'{nombre : >+20_.4f} {nombre2 : >+20_.4f}')
 	>>> print(f'{nombre3 : >+20_.4f} {nombre4 : >+20_.4f}')
 	
-		   +357_568.1231            +568.5688
-				-34.3432             +23.0000	
+	+357_568.1231            +568.5688
+		 -34.3432             +23.0000	
 				
 C'est très pratique pour faire des tableau de nombre.
 
