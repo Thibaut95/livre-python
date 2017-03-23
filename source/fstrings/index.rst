@@ -91,7 +91,7 @@ Voici la syntaxe pour utiliser le formattage:
 
 .. code-block:: pycon
 
-	f ' <texte> { <expression/variable> : <format> } <text> ... '
+	f ' <texte> { <expression/variable> : <format> } <texte> ... '
 
 Le format se trouve sous cette forme:
 
@@ -103,16 +103,16 @@ Le format se trouve sous cette forme:
 		- '^'	centré
 		- '='	aligne le signe à gauche et le nombre à droite
 	- signe	: détermine l'affichage du signe
-		- '+' 	indique que le signe + doit être afficher ainsi que le moins
-		- '-'   indique que le signe - doit être afficher (par defaut)
+		- '+' 	indique que le signe + doit être affiché ainsi que le -
+		- '-'   indique que le signe - doit être affiché (par defaut)
 		- ' '  	n'affiche pas le + mais insére un espace à la place
-	- largeur : détermine la place qui doit être réservé pour l'affichage du nombre
+	- largeur : détermine la place qui doit être réservée pour l'affichage du nombre
 	- groupage : détermine le symbole de séparation tous les 3 chiffres
 		- '_'
 		- ','
-	- précision : détermine la nom de chiffres après la virgule
+	- précision : détermine le nombre de chiffres après la virgule
 	- type : détermine le mode d'affichage
-		- 'e' ou 'E' 	notattion scientifique
+		- 'e' ou 'E' 	notation scientifique
 		- 'f' ou 'F'	affichage classique
 
 Exemple :
