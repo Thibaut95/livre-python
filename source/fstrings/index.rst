@@ -9,7 +9,7 @@ f-strings
 ------------
 Introduction
 ------------
-f-strings permet d'insérer des expressions dans des chaines de caractères en utilisant une syntaxe minimale. Ces expressions servent à insérer des variables dans les chaine de caractères et de les mettre en forme.
+f-strings permet d'insérer des expressions dans des chaines de caractères en utilisant une syntaxe minimale. Ces expressions servent à insérer des variables dans les chaines de caractères et de les mettre en forme.
 
 --------------
 Fonctionnement
@@ -146,7 +146,7 @@ Exemple :
 .. code-block:: pycon
 
 	>>> chmod = 0o644
-	>>> f'{chmod:08b}'
+	>>> f'{chmod:016b}'
 	
 	'110100100'
 	
@@ -155,9 +155,10 @@ Conclusion
 ----------
 
 Avantage de f-strings:
-	- variable introduit directement dans les chaine de caractères
+	- variable introduit directement dans les chaines de caractères
 	- concaténation des chaines de caractères sans '+'
-	- formattage des nombres simplifiés
+	- formattage simplifié des nombres 
 	- alignement du texte simplifié
+	- temps d'execution plus court
 	
-f-strings est un complément très utile aux string classique en simplifiant la manière d'utiliser des chaines de caractères. Le code a taper est plus simple et également plus court et qui dit moins de code dit moins d'erreurs.
+f-strings est un complément très utile aux string classique en simplifiant la manière d'utiliser des chaines de caractères. Le code à taper est plus simple et également plus court et qui dit moins de code dit moins d'erreurs.
