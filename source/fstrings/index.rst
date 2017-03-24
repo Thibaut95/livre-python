@@ -24,6 +24,8 @@ Pour utiliser f-strings il suffit de mettre un f devant la chaine de caractères
 	
 	Votre nom est un Paul et vous avez 23 ans
 	
+f-strings prend également en compte les fonctions ce qui signigfie que les fonctions qui se trouvent dans la chaine de caractères sont exécutées et le résultat est affiché. 
+	
 -----------	
 Echappement
 -----------
@@ -65,7 +67,7 @@ Pour afficher des apostrophes, il y a trois solutions:
 		ma chaine de caractères avec des 'apostrophes
 
 -------------		
-raw f-strings		
+Raw f-strings		
 -------------
 	
 Un string convertit automatiquement les échappements avec des backslashs comme par exemple : ``\n`` , ``\"``, ``\t``, etc. Donc si on ne veut pas que python interprète ces échappements il faut utiliser les raw string en ecrivant ``r`` avant la chaine de caractères et si on veut utiliser des raw f-strings il faut mettre ``fr``.
