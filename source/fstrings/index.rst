@@ -9,7 +9,7 @@ f-strings
 ------------
 Introduction
 ------------
-f-strings permet d'insérer des expressions dans des chaines de caractères en utilisant une syntaxe minimale.
+f-strings permet d'insérer des expressions dans des chaines de caractères en utilisant une syntaxe minimale. Ces expressions servent à insérer des variables dans les chaine de caractères et de les mettre en forme.
 
 --------------
 Fonctionnement
@@ -148,4 +148,7 @@ Exemple :
 	
 	11010
 	
-	
+----------
+Conclusion
+----------
+f-strings est facile d'utilisation du fait que les variables à afficher dans la chaine de caractères sont directement écrit dans la chaine. Le formattage est également très pratiques pour mettre en forme l'affichage. Donc f-strings est très pratiques par rapport au string classque et par conséquent est un excellent complément. 
