@@ -9,7 +9,7 @@ f-strings
 ------------
 Introduction
 ------------
-f-strings permet d'insérer des expressions dans des chaines de caractères en utilisant une syntaxe minimale.
+f-strings permet d'insérer des expressions dans des chaines de caractères en utilisant une syntaxe minimale. Ces expressions servent à insérer des variables dans les chaine de caractères et de les mettre en forme.
 
 --------------
 Fonctionnement
@@ -95,7 +95,7 @@ Voici la syntaxe pour utiliser le formattage:
 
 	f ' <texte> { <expression/variable> : <format> } <texte> ... '
 
-Le format se trouve sous cette forme:
+Le format se trouve sous cette forme pour les nombres à virgule:
 
 [alignement][signe][largeur][groupage][.précision][type]
 	
@@ -131,5 +131,33 @@ Exemple :
 	+357_568.1231            +568.5688
 	     -34.3432             +23.0000	
 				
-C'est très pratique pour faire des tableau de nombre.
+C'est très pratique pour faire des tableaux de nombre.
 
+Il existe aussi des option de formattage pour les entiers il suffit simplement de mettre une lettre pour le format:
+
+	- 'b'			: affiche en binaire
+	- 'c' 			: affiche le cractère char correspondant
+	- 'd'			: affiche en decimal (par defaut)
+	- 'o'			: affiche en octal
+	- 'x' ou 'X'	: affiche en hexa
+	
+Exemple :
+
+.. code-block:: pycon
+
+	>>> chmod = 0o644
+	>>> f'{chmod:08b}'
+	
+	'110100100'
+	
+----------
+Conclusion
+----------
+
+Avantage de f-strings:
+	- variable introduit directement dans les chaine de caractères
+	- concaténation des chaines de caractères sans '+'
+	- formattage des nombres simplifiés
+	- alignement du texte simplifié
+	
+f-strings est un complément très utile aux string classique en simplifiant la manière d'utiliser des chaines de caractères. Le code a taper est plus simple et également plus court et qui dit moins de code dit moins d'erreurs.
