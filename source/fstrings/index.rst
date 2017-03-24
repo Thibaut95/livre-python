@@ -93,7 +93,7 @@ Voici la syntaxe pour utiliser le formattage:
 
 	f ' <texte> { <expression/variable> : <format> } <texte> ... '
 
-Le format se trouve sous cette forme:
+Le format se trouve sous cette forme pour les nombres à virgule:
 
 [alignement][signe][largeur][groupage][.précision][type]
 	
@@ -130,3 +130,21 @@ Exemple :
 	     -34.3432             +23.0000	
 				
 C'est très pratique pour faire des tableaux de nombre.
+
+Il existe aussi des option de formattage pour les entiers il suffit simplement de mettre une lettre pour le format:
+	- 'b'			: affiche en binaire
+	- 'c' 			: affiche le cractère char correspondant
+	- 'd'			: affiche en decimal (par defaut)
+	- 'o'			: affiche en octal
+	- 'x' ou 'X'	: affiche en hexa
+	
+Exemple :
+
+.. code-block:: pycon
+
+	>>> nombreInt = 26
+	>>>	print(f'{nombreInt:b}')
+	
+	11010
+	
+	
