@@ -132,6 +132,7 @@ Exemple :
 C'est très pratique pour faire des tableaux de nombre.
 
 Il existe aussi des option de formattage pour les entiers il suffit simplement de mettre une lettre pour le format:
+
 	- 'b'			: affiche en binaire
 	- 'c' 			: affiche le cractère char correspondant
 	- 'd'			: affiche en decimal (par defaut)
