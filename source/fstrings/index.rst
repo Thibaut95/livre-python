@@ -144,7 +144,7 @@ Exemple :
 .. code-block:: pycon
 
 	>>> nombreInt = 26
-	>>>	print(f'{nombreInt:b}')
+	>>> print(f'{nombreInt:b}')
 	
 	11010
 	
