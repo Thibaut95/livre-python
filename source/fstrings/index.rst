@@ -145,12 +145,19 @@ Exemple :
 
 .. code-block:: pycon
 
-	>>> nombreInt = 26
-	>>> print(f'{nombreInt:b}')
+	>>> chmod = 0o644
+	>>> f'{chmod:08b}'
 	
-	11010
+	'110100100'
 	
 ----------
 Conclusion
 ----------
-f-strings est facile d'utilisation du fait que les variables à afficher dans la chaine de caractères sont directement écrit dans la chaine. Le formattage est également très pratiques pour mettre en forme l'affichage. Donc f-strings est très pratiques par rapport au string classque et par conséquent est un excellent complément. 
+
+Avantage de f-strings:
+	- variable introduit directement dans les chaine de caractères
+	- concaténation des chaines de caractères sans '+'
+	- formattage des nombres simplifiés
+	- alignement du texte simplifié
+	
+f-strings est un complément très utile aux string classique en simplifiant la manière d'utiliser des chaines de caractères. Le code a taper est plus simple et également plus court et qui dit moins de code dit moins d'erreurs.
